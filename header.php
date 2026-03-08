@@ -4,7 +4,7 @@
  */
 
 // 1. ตั้งค่าการเชื่อมต่อและ Cache
-$google_script_url = "https://script.google.com/macros/s/AKfycbwVL2QtRrLqYhSRrGgjoCy1zDbcjqwWApzYzCLQY3P0NqKDf2Rsvecn9WY0pkN3W_b0/exec";
+$google_script_url = "https://script.google.com/macros/s/AKfycbw5AfaeXO8dFG-WdxZnQh-elycNv2DUamgafOsm1jT-L46wbmvAHKUywNEDhPk7amKO/exec";
 $cache_file = 'data_cache.json';
 $cache_time = 300; // 5 นาที
 

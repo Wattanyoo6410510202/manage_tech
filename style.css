@@ -1,24 +1,32 @@
 /* การตั้งค่าพื้นฐาน ธีมเบจ-ทอง (Beige Warm Luxury) */
 :root {
-    --primary-gold: #C5A059;    /* สีทองหลัก */
-    --light-gold: #F4EBD0;      /* สีทองอ่อน */
-    --dark-gold: #947436;       /* สีทองเข้ม */
-    --bg-base: #F9F7F2;         /* สีพื้นหลังเบจสว่าง */
-    --bg-card: #FFFFFF;         /* สีการ์ดขาวบริสุทธิ์ */
-    --card-shadow: 0 8px 30px rgba(148, 116, 54, 0.1); 
-    
+    --primary-gold: #C5A059;
+    /* สีทองหลัก */
+    --light-gold: #F4EBD0;
+    /* สีทองอ่อน */
+    --dark-gold: #947436;
+    /* สีทองเข้ม */
+    --bg-base: #F9F7F2;
+    /* สีพื้นหลังเบจสว่าง */
+    --bg-card: #FFFFFF;
+    /* สีการ์ดขาวบริสุทธิ์ */
+    --card-shadow: 0 8px 30px rgba(148, 116, 54, 0.1);
+
     /* สีตัวอักษรสำหรับพื้นหลังสว่าง */
-    --text-main: #4A453C;       /* สีน้ำตาลเข้มเกือบดำ (อ่านง่ายบนสีเบจ) */
-    --text-sub: #7D7565;        /* สีน้ำตาลเทาสำหรับรายละเอียด */
-    --text-gold: #947436;       /* สีทองเข้มสำหรับเน้นข้อความ */
+    --text-main: #4A453C;
+    /* สีน้ำตาลเข้มเกือบดำ (อ่านง่ายบนสีเบจ) */
+    --text-sub: #7D7565;
+    /* สีน้ำตาลเทาสำหรับรายละเอียด */
+    --text-gold: #947436;
+    /* สีทองเข้มสำหรับเน้นข้อความ */
 }
 
 body {
     background-color: var(--bg-base);
     font-family: 'Kanit', sans-serif;
-    padding-bottom: 75px; 
+    padding-bottom: 75px;
     color: var(--text-main);
-    font-size: 14px; 
+    font-size: 14px;
     line-height: 1.5;
 }
 
@@ -34,13 +42,23 @@ h4.page-title {
 }
 
 /* Navbar สำหรับคอมพิวเตอร์ (Light Mode) */
-.navbar-desktop { 
+.navbar-desktop {
     background-color: var(--bg-card) !important;
     border-bottom: 1px solid var(--light-gold);
 }
-.navbar-desktop .navbar-brand { color: var(--primary-gold) !important; font-weight: bold; }
-.navbar-desktop .nav-link { color: var(--text-main) !important; }
-.navbar-desktop .nav-link.active { color: var(--primary-gold) !important; }
+
+.navbar-desktop .navbar-brand {
+    color: var(--primary-gold) !important;
+    font-weight: bold;
+}
+
+.navbar-desktop .nav-link {
+    color: var(--text-main) !important;
+}
+
+.navbar-desktop .nav-link.active {
+    color: var(--primary-gold) !important;
+}
 
 /* Bottom Nav (Mobile) - ธีมเบจ */
 .mobile-nav {
@@ -49,7 +67,7 @@ h4.page-title {
     left: 0;
     right: 0;
     height: 65px;
-    background: rgba(255, 255, 255, 0.9); 
+    background: rgba(255, 255, 255, 0.9);
     backdrop-filter: blur(15px);
     display: flex;
     justify-content: space-around;
@@ -66,20 +84,20 @@ h4.page-title {
     font-size: 0.75rem;
 }
 
-.mobile-nav-item.active { 
-    color: var(--primary-gold); 
+.mobile-nav-item.active {
+    color: var(--primary-gold);
 }
 
-.mobile-nav-item i { 
-    display: block; 
-    font-size: 1.3rem; 
-    margin-bottom: 3px; 
+.mobile-nav-item i {
+    display: block;
+    font-size: 1.3rem;
+    margin-bottom: 3px;
 }
 
 /* การ์ดรายการ - ขาวนวล ตัดขอบทองอ่อน */
 .card-job {
     border-radius: 16px;
-    border: 1px solid var(--light-gold); 
+    border: 1px solid var(--light-gold);
     box-shadow: var(--card-shadow);
     margin-bottom: 2px;
     background: var(--bg-card);
@@ -94,7 +112,7 @@ h4.page-title {
 .card-job h5 {
     font-size: 1.05rem;
     font-weight: 500;
-    color: var(--text-gold); 
+    color: var(--text-gold);
 }
 
 .status-badge {
@@ -105,9 +123,23 @@ h4.page-title {
 }
 
 /* ปรับสี Badge ให้ดูนุ่มนวลเข้ากับสีเบจ */
-.bg-success { background-color: #E8F5E9 !important; color: #2E7D32 !important; border: 1px solid #C8E6C9; }
-.bg-warning { background-color: #FFF8E1 !important; color: #F57F17 !important; border: 1px solid #FFECB3; }
-.bg-danger { background-color: #FFEBEE !important; color: #C62828 !important; border: 1px solid #FFCDD2; }
+.bg-success {
+    background-color: #E8F5E9 !important;
+    color: #2E7D32 !important;
+    border: 1px solid #C8E6C9;
+}
+
+.bg-warning {
+    background-color: #FFF8E1 !important;
+    color: #F57F17 !important;
+    border: 1px solid #FFECB3;
+}
+
+.bg-danger {
+    background-color: #FFEBEE !important;
+    color: #C62828 !important;
+    border: 1px solid #FFCDD2;
+}
 
 .img-preview {
     width: 100%;
@@ -120,7 +152,7 @@ h4.page-title {
 .btn-primary {
     background-color: var(--primary-gold) !important;
     border-color: var(--primary-gold) !important;
-    color: #FFFFFF !important; 
+    color: #FFFFFF !important;
     font-weight: 500;
     border-radius: 10px;
 }
@@ -133,6 +165,11 @@ h4.page-title {
 
 /* สำหรับ Desktop */
 @media (min-width: 992px) {
-    body { font-size: 15px; }
-    .navbar-desktop { border-radius: 0 0 15px 15px; }
+    body {
+        font-size: 15px;
+    }
+
+    .navbar-desktop {
+        border-radius: 0 0 15px 15px;
+    }
 }
